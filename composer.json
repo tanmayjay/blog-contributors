@@ -1,0 +1,30 @@
+{
+    "name": "jay/blog-contributors",
+    "description": "A WordPress plugin to add multiple contributors for blog posts",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": {
+            "Jay\\BlogContributors\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tanmayjay",
+            "email": "jktanmay@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "wp-coding-standards/wpcs": "dev-develop",
+        "phpcompatibility/phpcompatibility-wp": "dev-master",
+        "phpunit/phpunit": "^9.5",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

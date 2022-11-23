@@ -1,0 +1,5 @@
+/vendor/
+/node_modules/
+phpcs.xml
+phpunit.xml
+.DS_Store
