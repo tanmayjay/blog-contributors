@@ -1,0 +1,29 @@
+{
+  "name": "jblog-contributors",
+  "version": "1.0.0",
+  "description": "A WordPress plugin",
+  "author": "tanmayjay",
+  "license": "GPLv2",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --watch",
+    "dev:build": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.17.12",
+    "@wordpress/babel-preset-default": "^4.20.0",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.7",
+    "fs-extra": "^8.1.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "replace-in-file": "^5.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

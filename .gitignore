@@ -3,3 +3,5 @@
 phpcs.xml
 phpunit.xml
 .DS_Store
+/assets/js/
+/assets/css/
