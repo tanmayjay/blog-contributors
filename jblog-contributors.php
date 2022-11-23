@@ -152,6 +152,7 @@ final class JblogContributors {
      * @return void
      */
     private function init_classes() : void {
+        new Jay\BlogContributors\Admin();
     }
 
     /**
