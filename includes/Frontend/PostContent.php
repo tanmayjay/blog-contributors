@@ -59,6 +59,8 @@ class PostContent {
             return $content;
         }
 
+        wp_enqueue_style( 'jb-contributers-frontend' );
+
         ob_start();
         require_once JB_CONTRIBUTORS_TEMPLATES . '/contributors-list.php';
         $content .= ob_get_clean();

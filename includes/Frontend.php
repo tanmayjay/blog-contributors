@@ -32,6 +32,7 @@ class Frontend {
      * @return void
      */
     private function init_classes() : void {
+        new Frontend\Assets();
         new Frontend\PostContent();
     }
 }
