@@ -21,7 +21,10 @@ Brought to you by [Tanmay Kirtania](https://jktanmay.com)
 
 ## Installation ##
 
-Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+-   Clone the repository inside `/wp-content/plugins/`
+-   CD into folder `cd blog-contributors` and run `composer install` and then `composer dump-autoload -o`
+-   Lastly run `npm install` and then `npm run build` and then `npm run dev:build`
+-   Activate the plugin
 
 
 ## Changelog ##
