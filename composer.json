@@ -4,7 +4,8 @@
     "license": "GPLv2",
     "autoload": {
         "psr-4": {
-            "Jay\\BlogContributors\\": "includes/"
+            "Jay\\BlogContributors\\": "includes/",
+            "Jay\\BlogContributors\\Tests\\": "tests/phpunit/"
         }
     },
     "authors": [
@@ -14,13 +15,13 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
     "require-dev": {
         "wp-coding-standards/wpcs": "dev-develop",
         "phpcompatibility/phpcompatibility-wp": "dev-master",
         "phpunit/phpunit": "^9.5",
         "tareq1988/wp-php-cs-fixer": "dev-master",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "yoast/phpunit-polyfills": "1.x-dev"
     },
     "config": {
         "allow-plugins": {
