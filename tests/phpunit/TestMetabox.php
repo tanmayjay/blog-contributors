@@ -100,9 +100,9 @@ class TestMetabox extends TestCase {
 		$_POST['jblog_contributors'] = $contributors;
 		$_POST['jblog_contributors_checklist_nonce'] = wp_create_nonce( 'jblog-contributors-checklist-nonce' );
 
-		add_filter( 'map_meta_cap', [ $this, 'ignore_user_cap' ] );
+		add_filter( 'map_meta_cap', array( $this, 'ignore_user_cap' ) );
 		$this->metabox_instance->save_contributors( $post_id );
-		remove_filter( 'map_meta_cap', [ $this, 'ignore_user_cap' ] );
+		remove_filter( 'map_meta_cap', array( $this, 'ignore_user_cap' ) );
 
 		$saved_contributors = JbcHelper::get_contributors( $post_id );
 
@@ -129,9 +129,9 @@ class TestMetabox extends TestCase {
 		$_POST = array();
 		$_POST['jblog_contributors'] = $contributors;
 
-		add_filter( 'map_meta_cap', [ $this, 'ignore_user_cap' ] );
+		add_filter( 'map_meta_cap', array( $this, 'ignore_user_cap' ) );
 		$this->metabox_instance->save_contributors( $post_id );
-		remove_filter( 'map_meta_cap', [ $this, 'ignore_user_cap' ] );
+		remove_filter( 'map_meta_cap', array( $this, 'ignore_user_cap' ) );
 
 		$saved_contributors = JbcHelper::get_contributors( $post_id );
 

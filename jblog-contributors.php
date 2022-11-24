@@ -164,7 +164,7 @@ final class JblogContributors {
      * @return void
      */
     private function init_hooks() : void {
-        register_activation_hook( JB_CONTRIBUTORS_FILE, [ $this, 'activate' ] );
+        register_activation_hook( JB_CONTRIBUTORS_FILE, array( $this, 'activate' ) );
     }
 
     /**
