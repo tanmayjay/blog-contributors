@@ -1,6 +1,6 @@
 <div id="jblog-contributor-list">
     <?php if ( ! empty( $contributors ) ) : ?>
-    <h4><?php esc_html_e( 'Contributors:', 'jblog-contributors' ); ?></h4>
+    <h4><?php esc_html_e( 'Contributors', 'jblog-contributors' ); ?>:</h4>
     <ul class="jbc-list">
         <?php
         foreach ( $contributors as $contributor ) :

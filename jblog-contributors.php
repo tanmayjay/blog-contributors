@@ -165,6 +165,8 @@ final class JblogContributors {
      */
     private function init_hooks() : void {
         register_activation_hook( JB_CONTRIBUTORS_FILE, array( $this, 'activate' ) );
+
+        add_action( 'init', 'setup_localization' );
     }
 
     /**
@@ -180,6 +182,17 @@ final class JblogContributors {
         }
 
         Jay\BlogContributors\Installer::run();
+    }
+
+    /**
+     * Setups the localization.
+     *
+     * @since 1.0.0
+     *
+     * @return void
+     */
+    public function setup_localization() {
+        load_plugin_textdomain( 'jblog-contributors', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
 
     /**
