@@ -36,6 +36,7 @@ class Admin {
      * @return void
      */
     private function init_classes() : void {
+        new Admin\Assets();
         new Admin\Metabox();
     }
 }

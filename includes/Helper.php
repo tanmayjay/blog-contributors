@@ -82,4 +82,26 @@ class Helper {
 
         return $users;
     }
+
+    /**
+     * Returns script version and minified syntax.
+     *
+     * @since 1.0.0
+     *
+     * @return array
+     */
+    public static function get_asset_data() : array {
+        if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
+            $version = time();
+            $min     = '';
+        } else {
+            $version = JB_CONTRIBUTORS_VERSION;
+            $min     = '.min';
+        }
+
+        return array(
+            $version,
+            $min,
+        );
+    }
 }
