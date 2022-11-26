@@ -27,6 +27,9 @@ Brought to you by [Tanmay Kirtania](https://jktanmay.com)
 -   Activate the plugin
 
 
+## Demo ##
+The demonestration of the plugin can be found on [YouTube](https://youtu.be/M7sO5LxDPz0)
+
 ## Changelog ##
 
 ### v1.0.0 ###
