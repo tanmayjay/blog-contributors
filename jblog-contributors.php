@@ -166,7 +166,7 @@ final class JblogContributors {
     private function init_hooks() : void {
         register_activation_hook( JB_CONTRIBUTORS_FILE, array( $this, 'activate' ) );
 
-        add_action( 'init', 'setup_localization' );
+        add_action( 'init', array( $this, 'setup_localization' ) );
     }
 
     /**
